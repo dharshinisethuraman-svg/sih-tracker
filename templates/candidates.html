@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}Candidates - Skill Centre Tracker{% endblock %}
+{% block content %}
+  <h1>Candidates</h1>
+
+  <form method="get" class="search-form">
+    <input type="text" name="q" placeholder="Search by name..." value="{{ q }}">
+    <button type="submit">Search</button>
+    {% if q %}<a href="{{ url_for('candidate_list') }}">Clear</a>{% endif %}
+  </form>
+
+  {% if candidates|length == 0 %}
+    <p class="empty">No candidates found{{ ' for "%s"' % q if q else '' }}.</p>
+  {% else %}
+    <table class="table">
+      <thead>
+        <tr>
+          <th>ID</th><th>Name</th><th>Course</th><th>Batch</th>
+          <th>Attendance</th><th>Completed</th><th>Placement</th><th>Employer</th><th></th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for c in candidates %}
+          <tr>
+            <td>{{ c.candidate_id }}</td>
+            <td>{{ c.name }}</td>
+            <td>{{ c.course }}</td>
+            <td>{{ c.batch }}</td>
+            <td>{{ (c.attendance_pct ~ '%') if c.attendance_pct is not none else '—' }}</td>
+            <td>{{ 'Yes' if c.completed == 1 else ('No' if c.completed == 0 else '—') }}</td>
+            <td><span class="badge badge-{{ c.placement_status|lower|replace(' ', '-') }}">{{ c.placement_status }}</span></td>
+            <td>{{ c.employer or '—' }}</td>
+            <td><a href="{{ url_for('update_placement', candidate_id=c.candidate_id) }}">Update placement</a></td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  {% endif %}
+{% endblock %}

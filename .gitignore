@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+database.db
+.env
+ml/certificate_model.pt
+.DS_Store

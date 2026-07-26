@@ -1,0 +1,8 @@
+Flask==3.0.3
+python-dotenv==1.0.1
+Pillow==10.4.0
+
+# Only needed to RUN ml/train_classifier.py (Task 3).
+# Not required for the web app itself.
+torch==2.3.1
+torchvision==0.18.1

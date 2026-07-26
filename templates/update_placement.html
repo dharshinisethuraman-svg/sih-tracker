@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% block title %}Update Placement - Skill Centre Tracker{% endblock %}
+{% block content %}
+  <h1>Update Placement — {{ candidate.name }}</h1>
+  <p class="note">{{ candidate.course }} · Batch {{ candidate.batch }} ·
+     Attendance: {{ (candidate.attendance_pct ~ '%') if candidate.attendance_pct is not none else '—' }}</p>
+
+  <div class="form" style="max-width:420px; margin-bottom:1.25rem;">
+    <label>Optional: verify certificate photo before confirming placement
+      <input type="file" id="cert-file" accept="image/*">
+    </label>
+    <button type="button" id="verify-btn">Check certificate</button>
+    <div id="ml-hint" class="callout" style="display:none; margin-top:0.75rem;"></div>
+  </div>
+
+  <form method="post" class="form">
+    <label>Placement Status
+      <select name="placement_status" required>
+        {% for s in ['Unknown', 'Not Placed', 'Placed'] %}
+          <option value="{{ s }}" {{ 'selected' if candidate.placement_status == s else '' }}>{{ s }}</option>
+        {% endfor %}
+      </select>
+    </label>
+
+    <label>Employer (only if Placed)
+      <input type="text" name="employer" value="{{ candidate.employer or '' }}">
+    </label>
+
+    <button type="submit">Save</button>
+  </form>
+
+  <script>
+    // Task 5 integration: on-demand certificate check. Never blocks the
+    // save form, never shows a broken/blank state if the model isn't
+    // available, and never forces a verdict when the model is unsure -
+    // see /api/verify-certificate and ml/predict.py CONFIDENCE_FLOOR.
+    document.getElementById('verify-btn').addEventListener('click', () => {
+      const input = document.getElementById('cert-file');
+      const box = document.getElementById('ml-hint');
+      if (!input.files.length) {
+        box.style.display = 'block';
+        box.textContent = 'Choose an image first.';
+        return;
+      }
+      box.style.display = 'block';
+      box.textContent = 'Checking...';
+
+      const data = new FormData();
+      data.append('certificate', input.files[0]);
+
+      fetch("{{ url_for('verify_certificate') }}", { method: 'POST', body: data })
+        .then(r => r.json())
+        .then(res => {
+          if (!res.available) {
+            box.textContent = `Certificate check unavailable (${res.reason}). You can still record placement manually.`;
+            return;
+          }
+          if (res.verdict === 'uncertain') {
+            box.textContent = `Model is not confident enough to give a verdict (${res.confidence}%). Please verify this certificate manually.`;
+          } else {
+            box.textContent = `Model verdict: ${res.verdict} (confidence ${res.confidence}%). This is a suggestion only - please verify before saving.`;
+          }
+        })
+        .catch(() => {
+          box.textContent = 'Could not reach the certificate checker. You can still record placement manually.';
+        });
+    });
+  </script>
+{% endblock %}

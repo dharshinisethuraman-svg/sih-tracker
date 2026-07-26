@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% block title %}Dashboard - Skill Centre Tracker{% endblock %}
+{% block content %}
+  <div class="page-head">
+    <p class="eyebrow">Course performance</p>
+    <h1>Which courses are actually leading to jobs</h1>
+  </div>
+
+  {% set total_enrolled = summary | sum(attribute="enrolled") %}
+  {% set total_completed = summary | sum(attribute="completed") %}
+  {% set total_placed = summary | sum(attribute="placed") %}
+
+  <div class="stat-row">
+    <div class="stat-card">
+      <span class="stat-value">{{ total_enrolled }}</span>
+      <span class="stat-label">Total enrolled</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-value">{{ total_completed }}</span>
+      <span class="stat-label">Completed training</span>
+    </div>
+    <div class="stat-card stat-card--accent">
+      <span class="stat-value">{{ total_placed }}</span>
+      <span class="stat-label">Found employment</span>
+    </div>
+  </div>
+
+  {% if weakest %}
+    <div class="callout callout-warn">
+      <span class="callout-tag">Needs review</span>
+      <strong>{{ weakest.course }}</strong> has the lowest placement rate at
+      {{ weakest.placement_rate }}% — worth a closer look at curriculum fit or employer tie-ups.
+    </div>
+  {% else %}
+    <div class="callout">No completed candidates yet — rates will appear once data is entered.</div>
+  {% endif %}
+
+  <table class="table course-table">
+    <thead>
+      <tr>
+        <th>Course</th>
+        <th>Enrolled</th>
+        <th>Completed</th>
+        <th>Placed</th>
+        <th>Completion</th>
+        <th>Placement rate*</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for s in summary %}
+        <tr class="{{ 'weak' if weakest and s.course == weakest.course else '' }}">
+          <td class="course-name">{{ s.course }}</td>
+          <td class="num">{{ s.enrolled }}</td>
+          <td class="num">{{ s.completed }}</td>
+          <td class="num">{{ s.placed }}</td>
+          <td class="num">{{ s.completion_rate if s.completion_rate is not none else "—" }}%</td>
+          <td>
+            {% if s.placement_rate is not none %}
+              <div class="rate-bar">
+                <div class="rate-bar-track">
+                  <div class="rate-bar-fill" style="width: {{ s.placement_rate }}%"></div>
+                </div>
+                <span class="num rate-bar-label">{{ s.placement_rate }}%</span>
+              </div>
+            {% else %}
+              <span class="num">—</span>
+            {% endif %}
+          </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  <p class="note">* Placement rate = placed ÷ completed (of candidates who finished the course, the % that got a job). Candidates who never completed are excluded from this rate. See README for the full definition.</p>
+{% endblock %}

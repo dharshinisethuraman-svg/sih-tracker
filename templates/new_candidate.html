@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block title %}New Candidate - Skill Centre Tracker{% endblock %}
+{% block content %}
+  <h1>Enrol a Candidate</h1>
+  <form method="post" class="form">
+    <label>Name
+      <input type="text" name="name" value="{{ form.get('name', '') }}" required>
+    </label>
+
+    <label>Course
+      <select name="course" required>
+        <option value="">-- select --</option>
+        {% for c in courses %}
+          <option value="{{ c }}" {{ 'selected' if form.get('course') == c else '' }}>{{ c }}</option>
+        {% endfor %}
+      </select>
+    </label>
+
+    <label>Batch
+      <input type="text" name="batch" placeholder="e.g. 2026-A" value="{{ form.get('batch', '') }}" required>
+    </label>
+
+    <label>Enrolment Date
+      <input type="date" name="enrolment_date" value="{{ form.get('enrolment_date', '') }}" required>
+    </label>
+
+    <label>Attendance % (optional - fill in once training is underway)
+      <input type="number" step="0.1" min="0" max="100" name="attendance_pct" value="{{ form.get('attendance_pct', '') }}">
+    </label>
+    <p class="note">Completion is calculated automatically (attendance ≥ 60% = completed) once attendance is recorded.</p>
+
+    <button type="submit">Save Candidate</button>
+  </form>
+{% endblock %}

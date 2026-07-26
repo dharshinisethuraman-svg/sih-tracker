@@ -1,0 +1,101 @@
+candidate_id,name,course,batch,enrolment_date,attendance_pct,completed,placement_status,employer
+1,Suresh Kumar,Mobile Phone Repair,2025-A,2025-03-13,82.9,1,Not Placed,
+2,Ravi Menon,Beautician & Wellness,2025-A,2025-02-17,49.2,0,Not Placed,
+3,Priya Pillai,Tailoring & Garment Making,2026-A,2025-08-18,73.3,1,Unknown,
+4,Kavya Reddy,Mobile Phone Repair,2026-A,2025-04-21,97.2,1,Placed,ABC Electronics
+5,Manoj Sharma,Mobile Phone Repair,2026-C,2025-05-16,87.5,1,Not Placed,
+6,Manoj Sharma,Electrical Wiring Basics,2026-C,2025-07-05,72.5,1,Unknown,
+7,Divya Prasad,Basic Computer Literacy,2025-A,2025-07-14,53.1,0,Not Placed,
+8,Sangeeta Raj,Mobile Phone Repair,2026-A,2025-05-17,80.6,1,Unknown,
+9,Kavya Pillai,Tailoring & Garment Making,2025-B,2025-07-14,52.5,0,Not Placed,
+10,Nithya Devi,Mobile Phone Repair,2025-A,2025-01-17,87.3,1,Placed,ABC Electronics
+11,Arun Menon,Mobile Phone Repair,2025-C,2025-09-13,60.7,1,Not Placed,
+12,Karthik Raj,Tailoring & Garment Making,2026-C,2025-10-27,62.8,1,Not Placed,
+13,Meena Pillai,Beautician & Wellness,2025-A,2025-02-26,44.9,0,Unknown,
+14,Deepa Menon,Basic Computer Literacy,2026-B,2025-08-28,69.4,1,Not Placed,
+15,Priya Sharma,Electrical Wiring Basics,2026-C,2025-06-24,42.3,0,Not Placed,
+16,Rajesh Kumar,Mobile Phone Repair,2025-C,2025-02-24,91.6,1,Placed,Local Self-Employment
+17,Ganesh Menon,Tailoring & Garment Making,2025-B,2025-03-24,70.1,1,Not Placed,
+18,Priya Menon,Mobile Phone Repair,2026-A,2025-02-27,95.4,1,Not Placed,
+19,Lakshmi Devi,Basic Computer Literacy,2025-C,2025-02-10,40.6,0,Not Placed,
+20,Ravi Pillai,Tailoring & Garment Making,2025-C,2025-09-01,96.5,1,Placed,PowerTech Electricals
+21,Bhavani Reddy,Tailoring & Garment Making,2025-C,2025-06-09,60.9,1,Not Placed,
+22,Ganesh Iyer,Basic Computer Literacy,2025-A,2025-02-02,57.0,0,Not Placed,
+23,Divya Menon,Tailoring & Garment Making,2025-A,2025-01-31,49.9,0,Not Placed,
+24,Vijay Sharma,Electrical Wiring Basics,2025-B,2025-09-06,48.9,0,Unknown,
+25,Sanjay Menon,Beautician & Wellness,2025-B,2025-07-28,47.4,0,Unknown,
+26,Deepa Nair,Beautician & Wellness,2026-B,2025-01-28,78.8,1,Unknown,
+27,Manoj Nair,Basic Computer Literacy,2025-A,2025-04-08,69.9,1,Placed,Sunrise Garments Pvt Ltd
+28,Karthik Iyer,Tailoring & Garment Making,2025-B,2025-10-09,41.4,0,Not Placed,
+29,Nithya Kumar,Basic Computer Literacy,2025-A,2025-07-28,66.6,1,Placed,Glow Beauty Salon
+30,Anjali Raj,Beautician & Wellness,2025-B,2025-05-16,95.2,1,Unknown,
+31,Nithya Iyer,Tailoring & Garment Making,2025-B,2025-04-22,98.0,1,Not Placed,
+32,Vijay Kumar,Basic Computer Literacy,2026-C,2025-09-29,45.2,0,Not Placed,
+33,Ravi Raj,Basic Computer Literacy,2025-C,2025-05-01,61.2,1,Not Placed,
+34,Sanjay Menon,Basic Computer Literacy,2025-B,2025-10-26,71.7,1,Placed,QuickFix Mobile Services
+35,Arun Nair,Tailoring & Garment Making,2026-B,2025-03-09,78.7,1,Placed,QuickFix Mobile Services
+36,Ravi Kumar,Beautician & Wellness,2025-A,2025-10-03,48.9,0,Unknown,
+37,Sangeeta Sharma,Tailoring & Garment Making,2026-B,2025-03-22,63.5,1,Placed,QuickFix Mobile Services
+38,Bhavani Pillai,Basic Computer Literacy,2026-C,2025-02-23,96.0,1,Placed,ABC Electronics
+39,Suresh Pillai,Tailoring & Garment Making,2026-B,2025-04-18,81.6,1,Placed,Local Self-Employment
+40,Karthik Pillai,Beautician & Wellness,2026-A,2025-02-17,76.2,1,Unknown,
+41,Vijay Raj,Mobile Phone Repair,2025-C,2025-08-15,70.9,1,Placed,ABC Electronics
+42,Suresh Sharma,Tailoring & Garment Making,2025-B,2025-10-26,70.9,1,Placed,ABC Electronics
+43,Lakshmi Nair,Basic Computer Literacy,2026-A,2025-05-08,78.4,1,Placed,PowerTech Electricals
+44,Deepa Menon,Tailoring & Garment Making,2025-A,2025-04-01,92.3,1,Placed,Local Self-Employment
+45,Vijay Reddy,Tailoring & Garment Making,2026-A,2025-02-25,59.9,0,Unknown,
+46,Pooja Devi,Tailoring & Garment Making,2026-B,2025-06-06,88.3,1,Unknown,
+47,Arun Reddy,Mobile Phone Repair,2026-A,2025-05-23,57.8,0,Not Placed,
+48,Nithya Nair,Basic Computer Literacy,2025-B,2025-04-02,72.7,1,Unknown,
+49,Bhavani Reddy,Mobile Phone Repair,2026-B,2025-09-19,42.5,0,Not Placed,
+50,Arun Prasad,Basic Computer Literacy,2026-A,2025-09-24,95.2,1,Placed,Local Self-Employment
+51,Arun Nair,Beautician & Wellness,2025-C,2025-06-19,75.5,1,Unknown,
+52,Lakshmi Pillai,Mobile Phone Repair,2026-B,2025-07-26,80.3,1,Unknown,
+53,Manoj Raj,Electrical Wiring Basics,2026-B,2025-10-08,89.2,1,Placed,Sunrise Garments Pvt Ltd
+54,Deepa Menon,Electrical Wiring Basics,2026-B,2025-08-15,63.7,1,Placed,Glow Beauty Salon
+55,Kavya Sharma,Mobile Phone Repair,2026-A,2025-05-01,78.7,1,Placed,Sunrise Garments Pvt Ltd
+56,Meena Kumar,Basic Computer Literacy,2025-B,2025-02-07,64.6,1,Not Placed,
+57,Manoj Iyer,Beautician & Wellness,2025-A,2025-01-03,93.0,1,Not Placed,
+58,Deepa Devi,Tailoring & Garment Making,2026-A,2025-10-13,51.2,0,Not Placed,
+59,Rajesh Raj,Beautician & Wellness,2026-B,2025-09-16,62.7,1,Not Placed,
+60,Kavya Iyer,Beautician & Wellness,2026-A,2025-05-22,84.8,1,Placed,Local Self-Employment
+61,Divya Prasad,Beautician & Wellness,2025-C,2025-05-27,50.2,0,Not Placed,
+62,Nithya Sharma,Tailoring & Garment Making,2025-A,2025-07-16,80.1,1,Unknown,
+63,Deepa Nair,Electrical Wiring Basics,2026-B,2025-02-01,48.4,0,Not Placed,
+64,Sanjay Kumar,Electrical Wiring Basics,2026-B,2025-01-04,96.3,1,Placed,Glow Beauty Salon
+65,Deepa Pillai,Electrical Wiring Basics,2025-B,2025-04-23,52.7,0,Not Placed,
+66,Manoj Nair,Beautician & Wellness,2025-B,2025-03-07,98.7,1,Placed,Glow Beauty Salon
+67,Sanjay Menon,Basic Computer Literacy,2025-C,2025-08-08,43.8,0,Not Placed,
+68,Anjali Prasad,Beautician & Wellness,2026-A,2025-08-21,56.2,0,Not Placed,
+69,Manoj Prasad,Beautician & Wellness,2026-A,2025-08-29,36.3,0,Not Placed,
+70,Sangeeta Devi,Basic Computer Literacy,2025-A,2025-05-07,48.0,0,Unknown,
+71,Meena Devi,Tailoring & Garment Making,2026-C,2025-02-28,71.7,1,Placed,Local Self-Employment
+72,Karthik Nair,Tailoring & Garment Making,2025-A,2025-06-09,42.0,0,Unknown,
+73,Lakshmi Menon,Beautician & Wellness,2026-C,2025-04-12,39.9,0,Not Placed,
+74,Divya Sharma,Mobile Phone Repair,2025-C,2025-01-22,57.6,0,Not Placed,
+75,Sangeeta Sharma,Electrical Wiring Basics,2026-A,2025-08-04,88.5,1,Placed,QuickFix Mobile Services
+76,Rajesh Raj,Beautician & Wellness,2025-C,2025-09-25,97.8,1,Placed,PowerTech Electricals
+77,Pooja Iyer,Beautician & Wellness,2026-B,2025-05-06,89.0,1,Placed,Glow Beauty Salon
+78,Divya Iyer,Electrical Wiring Basics,2026-B,2025-01-15,67.1,1,Placed,Glow Beauty Salon
+79,Arun Nair,Mobile Phone Repair,2026-B,2025-05-22,71.1,1,Placed,Sunrise Garments Pvt Ltd
+80,Ravi Devi,Beautician & Wellness,2026-C,2025-05-04,79.9,1,Not Placed,
+81,Priya Sharma,Mobile Phone Repair,2025-B,2025-05-05,54.9,0,Not Placed,
+82,Pooja Pillai,Electrical Wiring Basics,2026-B,2025-10-09,56.5,0,Not Placed,
+83,Karthik Prasad,Mobile Phone Repair,2025-A,2025-04-09,55.5,0,Not Placed,
+84,Kavya Devi,Tailoring & Garment Making,2026-B,2025-09-26,73.8,1,Not Placed,
+85,Lakshmi Devi,Mobile Phone Repair,2025-B,2025-01-08,81.0,1,Placed,ABC Electronics
+86,Anjali Pillai,Mobile Phone Repair,2025-C,2025-09-09,41.7,0,Unknown,
+87,Lakshmi Iyer,Beautician & Wellness,2026-B,2025-04-05,97.8,1,Placed,Glow Beauty Salon
+88,Suresh Sharma,Beautician & Wellness,2026-A,2025-10-23,75.9,1,Placed,Sunrise Garments Pvt Ltd
+89,Sanjay Prasad,Basic Computer Literacy,2025-A,2025-10-13,84.7,1,Not Placed,
+90,Divya Pillai,Beautician & Wellness,2026-B,2025-06-02,90.9,1,Not Placed,
+91,Bhavani Kumar,Electrical Wiring Basics,2025-A,2025-04-19,52.2,0,Unknown,
+92,Divya Raj,Electrical Wiring Basics,2025-A,2025-01-02,61.6,1,Not Placed,
+93,Anjali Devi,Mobile Phone Repair,2026-C,2025-08-21,39.6,0,Unknown,
+94,Karthik Menon,Tailoring & Garment Making,2026-A,2025-10-06,49.6,0,Unknown,
+95,Karthik Raj,Basic Computer Literacy,2025-A,2025-06-07,73.7,1,Not Placed,
+96,Ramesh Babu,Mobile Phone Repair,2026-B,2026-02-10,,,Unknown,
+97,Priya Sharma,Beautician & Wellness,2026-A,2026-01-15,82.0,1,Placed,Glow Beauty Salon
+98,Priya Sharman,Beautician & Wellness,2026-A,2026-01-16,78.5,1,Not Placed,
+99,,,,,,,,
+100,Rajesh Sharma,Beautician & Wellness,2026-C,2025-07-26,96.3,1,Placed,Glow Beauty Salon
