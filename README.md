@@ -1,6 +1,6 @@
 # Skill Training Centre — Enrolment & Placement Tracker
 
-**SIH 2026 Internal Practical Assessment** · Dharshini SR · Reg 411623104009 · PDKVCET, CSE
+**SIH 2026 Internal Practical Assessment** ·
 
 ## Problem, in two lines
 
